@@ -1,0 +1,428 @@
+/* 
+  Theme Name: Awesome 
+  Author: Mehedi Hassan
+  Author URI: http://mhassan.unaux.com
+  Description: This is a nice blog theme.
+  Version: 1.0.0
+  Text Domain: awesome;
+*/
+
+
+
+
+
+
+/* typography content */
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 17px;
+  line-height: 30px;
+}
+body a{
+  color: var(--theme-color);
+}
+body a:hover{
+  text-decoration: none;
+  color: var(--theme-color);
+}
+body .btn:focus, body input:focus{
+  box-shadow: 0 0 0 black !important;
+}
+
+
+/* Common styleing */
+.theme-bg{
+  background: var(--theme-bg);
+}
+
+
+/* large display styleing */
+@media(min-width: 1200px){
+  #header{
+    width: 17rem;
+  }
+  .navbar{
+    height: 100vh;
+    min-height: 700px;
+    width: 17rem;
+    border-right: 5px solid black;
+    align-items: inherit;
+  }
+  .navbar .container-fluid {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #main-menu{
+    width: 100%;
+  }
+  .navbar .navbar-nav{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 100%;
+  }
+  .menu-navbar-menu-container{
+    width: 100%;
+  }
+  .navbar .navbar-nav li  a{
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    /* border-bottom: 1px solid black; */
+  }
+  .dropdown-menu{
+    left: 60%;
+    top: 0;
+  }
+  .search-box .input-group {
+    margin-bottom: 30px;
+  }
+
+  .left-section{
+    padding-left: 17rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .dropdown-menu {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    background: var(--theme-bg);
+  }
+  .navbar-nav li:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+
+
+
+/* main styleing */
+
+/* navbar styleing */
+.navbar .navbar-brand a{
+  color: whitesmoke;
+}
+.navbar-nav li a{
+  color: white !important;
+  font-size: 18px;
+}
+.navbar-nav .active a, .navbar-nav li a:hover, .dropdown-menu a:hover{
+  color: var(--theme-color) !important;
+  background: transparent;
+}
+
+.search-box .input-group{
+  border-bottom:1px solid var(--theme-color);
+  background: white;
+}
+.search-box .input-group input{
+  background: transparent;
+  border-radius: 0px;
+  border:0px;
+  outline: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+.search-box .input-group button{
+  background: transparent;
+  color: var(--theme-color);
+  border: 0px;
+  outline: none;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+.search-box .input-group button svg{
+  margin-top: 7px;
+}
+
+@media (max-width: 1199.98px) {
+  .post-sec-header {
+    padding-top: 50px;
+  }
+  .navbar{
+    box-shadow: 0 0 3px black;
+  }
+  .post-sec-header{
+    background: var(--theme-bg);
+    color: white;
+  }
+  .post-sec-header h4{
+    color: white !important;
+  }
+  .featureds-post-wrapper{
+    margin-top: 100px !important;
+  }
+}
+
+
+
+/* featured post styleing */
+
+.featured-slider-wrap {
+  overflow: hidden;
+}
+.featured-slider-wrap .item, .featured-single-wrap {
+  position: relative;
+}
+.featured-slider-wrap .fs-post-thumb img {
+  width: 100% !important;
+  height: 400px;
+}
+
+.featured-single-wrap .f-post-thumb img{
+  width: 100% !important;
+  height: 197px;
+}
+.featured-slider-wrap .fs-post-content, .f-post-content {
+  position: absolute;
+  bottom:0;
+  left: 0;
+  padding:10px;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+.featured-slider-wrap .fs-title, .f-title {
+  color: white !important;
+  font-size: 20px;
+  font-weight: 400;
+}
+.featured-slider-wrap .fs-post-cat span, .f-post-cat span {
+  background: var(--theme-bg);
+}
+.featured-slider-wrap .fs-post-cat span a, .f-post-cat span a{
+  color: white;
+  font-size: 13px;
+}
+.featured-slider-wrap:hover .fs-post-cat span, .featured-single-wrap:hover .f-post-cat span {
+  background: var(--theme-color);
+}
+.featured-slider-wrap .owl-nav {
+  position: absolute;
+  top: 40%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.featured-slider-wrap .owl-nav button {
+  width: 30px;
+  height: 30px;
+}
+.featured-slider-wrap .owl-nav button span{
+  font-size: 22px;
+  color: white;
+}
+.featured-slider-wrap .owl-dots {
+  display: none;
+}
+
+
+/* singel post styleing */
+
+.card {
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+}
+.card-header{
+  padding: 0px;
+  position: relative;
+}
+.post-thumb{
+  width: 100%;
+  height: 200px;
+}
+.card-header .post-cat{
+  position: absolute;
+  bottom: 0;
+  background: white;
+  padding: 0 10px;
+  font-size: 14px;
+}
+.post-title a h4 {
+  color: rgb(58, 58, 58);
+  font-size: 20px;
+  font-weight: 400;
+}
+.card:hover .post-title a h4 {
+  color: var(--theme-color);
+}
+.post-meta{
+  font-size: 12px;
+}
+.post-content p{
+  text-align: justify;
+}
+.post-content img{
+  width: 100%;
+}
+.single-post-page .post-thumb{
+  height: 400px;
+}
+
+/* footer styleing */
+#footer{
+  border-top: 5px solid black;
+}
+
+
+/* basic styleing */
+.post-sec-header{
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  margin-bottom: 40px;
+}
+.post-sec-header h4{
+  font-size: 25px;
+  font-weight: 400;
+  color: slategrey;
+}
+
+.hp-post-sec-header{
+  background: transparent;
+}
+.hp-post-sec-header .heading span{
+  color: white;
+  background: var(--theme-bg);
+  padding: 5px;
+}
+.hp-post-sec-header .heading{
+  border-bottom: 4px solid var(--theme-bg);
+  display: block;
+  width: 100%;
+}
+
+.pagination li{
+  margin-right: 5px;
+}
+.pagination li a{
+  display: block;
+  border:1px solid var(--theme-color);
+  color: var(--theme-color);
+  padding: 2px 8px;
+}
+.pagination li.active a, .pagination li a:hover{
+  background: var(--theme-color);
+  color: white;
+}
+
+
+/* widget styleing */
+
+.left-widget-heading h4{
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #e9ecef;
+  padding: 7px 10px;
+  color: rgb(58, 58, 58);
+  border-top: 2px solid var(--theme-bg);
+  margin: 30px 0;
+}
+.footer-widget-heading h4{
+  font-size: 20px;
+  border-bottom: 2px solid white;
+  padding: 10px 0;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.sidebar-wrap ul, .footer-widget-wrap ul {
+  padding-inline-start: 0px;
+  list-style-type: none;
+}
+.sidebar-wrap ul li, .footer-widget-wrap ul li{
+  position: relative;
+  padding-left: 20px;
+}
+.sidebar-wrap ul li::before, .footer-widget-wrap ul li::before {
+  position: absolute;
+  content: '\00BB';
+  left: 0;
+  top: 1px;
+}
+
+.footer-widget-wrap ul li a, .footer-widget-wrap a{
+  color: white;
+}
+.footer-widget-wrap ul li:hover::before {
+  color: var(--theme-color);
+}
+.sidebar-wrap ul li:hover::before {
+  color: var(--theme-bg);
+}
+#wp-calendar{
+  width: 100%;
+}
+
+
+/* Comments styleing */
+.comments ul{
+  list-style: none;
+}
+.comments .comments-inner{
+  padding:0px;
+}
+.comments li{
+  padding: 15px 0;
+}
+.comments .comment-author img{
+  padding: 2px;
+  background: lavenderblush;
+}
+.comments .comment-metadata time{
+  font-size: 12px;
+  font-style: italic;
+  color: gray;
+}
+#comment-submit {
+  border: 1px solid var(--theme-bg) ;
+  background: var(--theme-bg) ;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+#comment-submit:hover{
+  background: var(--theme-color);
+  border-color: var(--theme-color);
+}
+
+
+
+@media(max-width: 575.98px){
+  .search-box{
+    width: 130px;
+  }
+  .featured-slider-wrap .fs-post-thumb img {
+    height: 220px !important;
+  }
+  .single-post-page .post-thumb{
+    height: 250px;
+  }
+}

@@ -1,0 +1,420 @@
+/* 
+  Theme Name: Business Time
+  Author: Mehedi Hassan
+  Author URI: https://nksbd.blogspot.com
+  Description: "Business Tiem" is a blogging site. thsi is very interesting and good looking site. 
+  Text Domain: businesstime
+  Version: 1.0.0
+*/
+
+
+
+
+
+
+html {
+  scroll-behavior: smooth ;
+  font-family: 'Times New Roman', Times, serif !important;
+}
+
+
+/* Typography */
+body{
+  position: relative;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+body a{
+  color: var(--theme-color);
+}
+body a:hover{
+  text-decoration: none;
+  color: var(--theme-color);
+}
+body .btn:focus, body input:focus{
+  box-shadow: 0 0 0 black !important;
+}
+body .bg-dark{
+  background: var(--theme-bg) !important;
+}
+body h4{
+  font-weight: 400;
+}
+
+
+
+
+
+
+/* main stylling */
+
+.fixed{
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 10000;
+}
+.scrolling-down{
+  top: -100px;
+  transition: top .5s;
+  -webkit-transition: top .5s;
+  -moz-transition: top .5s;
+  -ms-transition: top .5s;
+  -o-transition: top .5s;
+}
+.scrolling-up{
+  top: 0;
+  box-shadow: 0 0 15px black;
+  transition: top .5s;
+  -webkit-transition: top .5s;
+  -moz-transition: top .5s;
+  -ms-transition: top .5s;
+  -o-transition: top .5s;
+}
+
+.navbar-nav li a{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+}
+.navbar-nav .dropdown-menu{
+  background: var(--theme-bg);
+}
+.navbar-nav .dropdown-menu a{
+  color: rgba(255, 255, 255, 0.596);
+}
+.navbar-nav .dropdown-menu li a:hover{
+  background: transparent;
+  color: white;
+}
+@media (min-width: 992px) {
+  .navbar-nav li ul, .navbar-nav li ul.show{
+    transition: .3s ease-in;
+    -webkit-transition: .3s ease-in;
+    -moz-transition: .3s ease-in;
+    -ms-transition: .3s ease-in;
+    -o-transition: .3s ease-in;
+    display: none;
+}
+  .navbar-nav li:hover ul{
+    display: block;
+  }
+}
+
+
+.search-box .form-control{
+  border: 0px;
+  border-bottom: 1px solid white;
+  background: transparent;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  width: 90px;
+  padding-left: 0px;
+  transition: .3s ease-out;
+  -webkit-transition: .3s ease-out;
+  -moz-transition: .3s ease-out;
+  -ms-transition: .3s ease-out;
+  -o-transition: .3s ease-out;
+}
+.search-box .form-control:focus{
+  color: white;
+  width: 200px;
+}
+.search-box .btn-secondary {
+  background: transparent !important;
+  border:0px;
+  border-bottom: 1px solid white;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+.search-btn svg{
+  margin-top: 8px;
+}
+
+
+
+/* Featured post styleing */
+#hero-wrapper{
+  margin-top: 50px;
+}
+
+.featured-post-wrap{
+  position: relative;
+  overflow: hidden;
+  margin:3px;
+}
+.featured1 img{
+  height: 400px !important;
+}
+.featured2 img{
+  height: 250px !important;
+}
+.featured3 img{
+  height: 144px !important;
+}
+.featured3 h4{
+  line-height: 10px;
+}
+.featured3 h4 a{
+  font-size: 15px;
+  font-weight: 400;
+}
+.featured3 .featured-post-content{
+  padding: 0 10px;
+}
+.featured-post-wrap img{
+  transition: .3s ease-in;
+  -webkit-transition: .3s ease-in;
+  -moz-transition: .3s ease-in;
+  -ms-transition: .3s ease-in;
+  -o-transition: .3s ease-in;
+}
+.featured-post-wrap:hover img{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.featured-post-content{
+  position: absolute;
+  z-index: 10;
+  bottom:20px;
+  padding: 0 20px;
+}
+.category-meta a{
+  color: white !important;
+  font-size: 10px;
+}
+.featured-post-wrap:hover .category-meta, .single-post-wrap:hover .category-meta{
+  background: var(--theme-color) !important;
+}
+
+
+
+/* General home page styling */
+.section-heading, .sidebar-widget-heading{
+  border-bottom: 3px solid var(--theme-bg);
+}
+.footer-widget-heading {
+  position: relative;
+}
+.footer-widget-heading::before {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 2px;
+  background: white;
+  bottom: 0;
+  left:0;
+}
+
+
+
+
+/* Single post and page styleing */
+.single-post-wrap{
+  margin-bottom: 20px;
+}
+.single-post-wrap .post-img{
+  position: relative;
+}
+.single-post-wrap .category-meta{
+  position: absolute;
+  bottom: 5px;
+  left:5px;
+}
+
+.single-post-wrap .post-img img{
+  height: 150px ;
+  width: 100%;
+}
+.single-post-img img{
+  height: auto !important;
+  max-height: 400px;
+}
+.single-post-wrap .heading a{
+  color: rgb(39, 39, 39);
+}
+.single-post-wrap:hover .heading a{
+  color: var(--theme-color);
+}
+.single-post-wrap .post-meta {
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.single-post-wrap .content{
+  text-align: justify;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.single .single-post-wrap .content, .page .single-post-wrap .content{
+  padding-top: 30px;
+  font-size: 18px;
+  line-height: 30px;
+  padding-bottom: 50px;
+}
+.single .single-post-wrap .content div, .page .single-post-wrap .content div{
+  margin-top: 40px;
+}
+.single-post-wrap .content img{
+  max-width: 100%;;
+}
+
+/* Comments styleing */
+.comments ul{
+  list-style: none;
+}
+.comments .comments-inner{
+  padding:0px;
+}
+.comments li{
+  padding: 15px 0;
+}
+.comments .comment-author img{
+  padding: 2px;
+  background: lavenderblush;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.comments .comment-metadata time{
+  font-size: 12px;
+  font-style: italic;
+  color: gray;
+}
+#comment-submit {
+  border: 1px solid var(--theme-bg) ;
+  background: var(--theme-bg) ;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+#comment-submit:hover{
+  background: var(--theme-color);
+  border-color: var(--theme-color);
+}
+
+
+
+/* pagination sttleing */
+.pagination li{
+  margin-left: 5px;
+}
+.pagination li a {
+  display: block;
+  padding: 3px 10px;
+  border: 1px solid var(--theme-color);
+}
+.pagination li a:hover, .pagination li.active a {
+  background: var(--theme-color);
+  color: white;
+}
+
+/* Breadcrumb styleing */
+.breadcrumb {
+  background-color: transparent !important;
+  border-left: 1px solid black;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+.breadcrumb-wrap, .archive-heading-wrap, .search-heading-wrap {
+  border-top: 1px solid rgba(0, 0, 0, 0.144);
+  border-bottom: 5px solid black;
+}
+
+#wp-calendar{
+  width: 100%;
+}
+
+
+/* Widget styleing */
+.single-widget-wrap ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+.single-widget-wrap ul li {
+  position: relative;
+  padding-left: 20px;
+}
+.single-widget-wrap ul li::before {
+  position: absolute;
+  content: '\00BB';
+  left: 0;
+  top: 5px;
+}
+.single-widget-wrap ul li:hover::before {
+  color: var(--theme-color);
+}
+.single-widget-wrap ul li a{
+  display: inline-block;
+  padding: 3px;
+  border-bottom: 1px solid transparent;
+}
+
+
+
+#footer-wrap{
+  padding-top: 70px;
+  border-top: 5px solid black;
+}
+#footer-wrap .widget-heading{
+  border-bottom-color: white;
+}
+.menu-footer-menu-container ul li a{
+  color:white;
+}
+.menu-footer-menu-container ul li a:hover{
+  color: var(--theme-color);
+}
+
+.copywright-wrap{
+  padding: 30px 0;
+  border-top: 1px solid black;
+  margin-top: 40px;
+}
+
+.gotop-btn a{
+  background: var(--theme-bg);
+  border: 0px;
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#gotop{
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+#gotop:hover a{
+  color: var(--theme-color) !important;
+}
+.show{
+  visibility: visible !important;
+  opacity: 1 !important;
+}

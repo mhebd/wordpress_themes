@@ -1,0 +1,150 @@
+
+
+/* Activity page post update form styling
+================================== */
+.activity-update-form{
+  margin-bottom: 40px;
+}
+#whats-new-submit input, #bp-send-invites-form button{
+  border:0px;
+  outline:none;
+  background: var(--bg-color);
+  color: white;
+  border-radius: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#whats-new-submit input:hover, #bp-send-invites-form button:hover{
+  background: black;
+}
+
+/* BP group invite send form textarea 
+===========================================================*/
+#bp-send-invites-form textarea{
+  width: 100%;
+}
+
+/* BP activity page, profile page and others button styling
+================================================================ */
+.buddypress-wrap .bp-navs li.current a, .buddypress-wrap .bp-navs li.current a:focus, .buddypress-wrap .bp-navs li.current a:hover, .buddypress-wrap .bp-navs li.selected a, .buddypress-wrap .bp-navs li.selected a:focus, .buddypress-wrap .bp-navs li.selected a:hover{
+  background: var(--bg-color) !important;
+}
+.buddypress-wrap .main-navs:not(.dir-navs) li.current a, .buddypress-wrap .main-navs:not(.dir-navs) li.selected a, .buddypress-wrap .bp-subnavs li.current a, .buddypress-wrap .bp-subnavs li.selected a{
+  color: white !important;
+}
+
+
+
+/* BP all page search form styling
+==================================================== */
+.bp-dir-search-form input:focus {
+  border: 1px solid var(--bg-color) !important;
+  border-right: 0px;
+  outline: none;
+  box-shadow: 0 0 0 black;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+}
+.bp-dir-search-form button {
+  background: var(--bg-color) !important;
+  color: white;
+  padding: 3px 15px !important;
+}
+.bp-dir-search-form button:hover {
+  background: black !important;
+}
+
+
+/* BP activity and other post content and comments styling
+========================================================= */
+.activity-content .activity-header a, .activity-comments .acomment-meta a{
+  font-weight: 700;
+}
+.acomment-reply, .acomment-delete, .activity-read-more a{
+  font-weight: 700;
+  text-decoration: underline !important;
+}
+.acomment-reply:hover, .acomment-delete:hover, .activity-read-more a:hover{
+  text-decoration: none !important;
+}
+
+
+/* BP latest activity [home page] styling
+======================================================= */
+.bp-latest-activities blockquote {
+  border: 1px solid rgba(0, 0, 0, 0.158);
+  padding: 10px;
+  background: white;
+}
+.bp-latest-activities blockquote p {
+  padding-left: 15px;
+}
+.bp-latest-activities blockquote footer {
+  margin-top: 30px;
+  background: rgba(243, 243, 243, 0.514);
+}
+
+
+/* BP widget active friend list avatar styling
+========================================================== */
+.buddypress.widget .avatar-block .item-avatar {
+  position: relative;
+}
+.buddypress.widget .avatar-block .item-avatar::before {
+  position: absolute;
+  content: '';
+  width: 7px;
+  height: 7px;
+  background: rgb(3, 255, 3);
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  z-index: 11;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* BP others widget options styling
+========================================================== */
+.item-options a{
+  color: black !important;
+}
+.item-options a.selected, .item-options a:hover{
+  color: var(--theme-color) !important;
+}
+
+button, input:focus, optgroup:focus, select:focus, textarea:focus {
+  border: 1px solid var(--bg-color);
+  outline: none;
+}
+
+
+/* BP login and others form styling
+=========================================================== */
+.standard-form input[type=text] {
+  width: 100% !important;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.standard-form input[type=submit], .standard-form input[type=button]{
+  outline: none;
+  border: 0px;
+  background: var(--bg-color);
+  color: white;
+  min-width: 100px !important;
+}
+
+/* BP messae content and button styling
+============================================================= */
+#bp-message-content{
+  margin-bottom: 40px;
+}
+#bp-messages-send{
+  width: 100px;
+}

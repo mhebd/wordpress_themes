@@ -1,0 +1,16 @@
+
+
+***Theme custom post meta box text***
+______________________________________
+
+#Resources Post
+---------------
+=> For Resource Link       >> [resources_link]
+
+#Themes Post
+-------------
+=> For Category            >> [category]
+=> For Theme Woner         >> [theme_woner]
+=> For Publish Date        >> [publish_date]
+=> For Buy Link            >> [buy_link]
+=> For Demo Link           >> [demo_link]

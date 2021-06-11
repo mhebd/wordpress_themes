@@ -1,0 +1,425 @@
+/*
+  Theme Name: Gravity
+  Theme URI: https://localhost/gravity
+  Author: Mehedi Hassan
+  Author URI: https://nksbd.blogspot.com
+  Description: This is a very interesting blog site. I made this blog for myself. I design this site with attractive look.
+  Version: 1.0.0
+*/
+
+@import url(href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap");
+@import url(href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap");
+
+
+
+:root {
+  --tc: red;
+  --lc: rgb(36, 216, 36);
+  --db: rgb(0, 0, 104);
+  --ff: 'UnifrakturCook', cursive;
+}
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+::selection{
+  color: white;
+  background: var(--tc);
+}
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+}
+.container-fluid{
+  margin:0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+.cf-padding{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+a{
+  color: var(--lc) !important;
+  transition: .3s all ease-in;
+  -webkit-transition: .3s all ease-in;
+  -moz-transition: .3s all ease-in;
+  -ms-transition: .3s all ease-in;
+  -o-transition: .3s all ease-in;
+}
+a:hover{
+  text-decoration: none !important;
+  color: var(--tc);
+}
+input:focus, .btn:focus {
+  box-shadow: 0 0 0 black !important;
+}
+.cat-name a{
+  color: var(--tc) !important;
+  font-size: 12px;
+  padding-bottom: 10px;
+  margin:0;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.heading{
+  color: rgb(95, 95, 95) !important;
+  text-transform: capitalize;
+}
+.heading:hover{
+  color: var(--tc) !important;
+}
+
+
+
+
+
+
+
+.header{
+  background: var(--tc);
+  color: white;
+  margin-bottom: 60px;
+}
+.header .brand-name{
+  font-family: var(--ff);
+  font-size: 60px;
+  font-weight: 700;
+  color: white !important;
+}
+.header .description{
+  font-size: 14px;
+  padding-left: 10px;
+}
+.header .social-icon-wrap{
+  padding: 30px 0;
+}
+.header .social-icon-wrap .nav-link{
+  padding: 0;
+  padding-left: 10px;
+}
+.header .social-icon-wrap .nav-link svg{
+  width: 50px;
+  height: 50px;
+  padding:10px;
+  background: var(--db);
+  color: rgb(255, 255, 255);
+}
+.header .nav-section{
+  border-top: 1px solid var(--db);
+  border-bottom: 1px solid var(--db);
+}
+.header .nav-section ul a {
+  color: white !important;
+  display: block;
+  padding: 15px 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+.header .nav-section ul a:hover, .header .nav-section ul .current_page_item a {
+  color: var(--lc) !important;
+}
+.nav-section  li{
+  position: relative;
+  padding-left: 10px;
+}
+.nav-section ul ul{
+  position: absolute;
+  background: var(--tc) !important;
+  width:200px;
+  list-style: none;
+  padding:10px;
+  border-top: 1px solid var(--db);
+  z-index: 9999;
+  visibility: hidden;
+  opacity: 0;
+  top:150%;
+  transition: .3s all ease-in;
+  -webkit-transition: .3s all ease-in;
+  -moz-transition: .3s all ease-in;
+  -ms-transition: .3s all ease-in;
+  -o-transition: .3s all ease-in;
+}
+.nav-section ul li:hover > ul{
+  visibility: visible;
+  opacity: 1;
+  top:100%;
+}
+
+.nav-section ul ul li{
+  position: relative;
+}
+.nav-section ul ul li a{
+  display: block;
+  padding: 7px 0;
+}
+.nav-section ul ul li ul{
+  left:188px;
+  border-left: 1px solid var(--db);
+  top:0% !important;
+}
+
+
+
+
+
+.header .nav-section .nav-link:hover{
+  color: var(--lc);
+  background-color: var(--db);
+}
+.header .nav-section .form{
+  padding-top: 8px;
+}
+.header .nav-section .submit-btn{
+  background: var(--db);
+  border:0px;
+  outline: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.header .nav-section .form-control{
+  border:none;
+  outline: none;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+
+
+
+.hero-post-sec{
+  padding-bottom: 60px;
+}
+.post-slider-wrap .item{
+  max-height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.post-slider-wrap .post-img img{
+  width:100%;
+  height: 100% !important;
+}
+.post-slider-wrap .post-content{
+  position: absolute;
+  bottom: -100%;
+  text-align: center;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.52);
+  padding-bottom: 50px;
+  transition: .3s ease-in;
+  -webkit-transition: .3s ease-in;
+  -moz-transition: .3s ease-in;
+  -ms-transition: .3s ease-in;
+  -o-transition: .3s ease-in;
+}
+
+.post-slider-wrap:hover .post-content {
+  bottom:0;
+}
+.post-slider-wrap .post-content .heading{
+  color: white;
+}
+.post-slider-wrap .owl-carousel{
+  position: relative;
+}
+.post-slider-wrap .owl-nav{
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.post-slider-wrap .owl-nav button span{
+  font-size: 30px;
+  display: inline-block;
+  padding: 10px;
+  background: rgba(128, 128, 128, 0.404);
+  color: white;
+}
+.post-slider-wrap .owl-dots{
+  display: none;
+}
+.column-post-wrap {
+  height: 400px;
+  overflow-y: scroll;
+}
+.column-post-wrap .single-post {
+  padding-bottom: 30px;
+  padding-top: 10px;
+  border-bottom: 1px solid var(--db);
+}
+.column-post-wrap .single-post:last-of-type {
+  border-bottom: 0px;
+}
+.column-post-wrap .single-post .heading h3{
+  font-size: 20px;
+}
+
+.posts-wrapper .post{
+  padding: 20px;
+}
+.posts-wrapper .post:last-of-type {
+  border-bottom: 0px ;
+}
+.posts-wrapper .post .heading h2{
+  font-size: 30px;
+  text-align: justify;
+}
+.posts-wrapper .post .post-meta {
+  font-size: 14px;
+}
+.posts-wrapper .post .content, .content {
+  padding-top: 10px;
+  text-align: justify;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+.posts-wrapper .post .content::first-letter{
+  font-size: 30px;
+  color: var(--tc);
+}
+.pagination-wrap {
+  padding: 60px 0;
+}
+
+.navigation li{
+  padding: 0 5px;
+}
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+    color: #fff !important;
+    text-decoration:none;
+}
+ 
+.navigation li {
+    display: inline;
+}
+ 
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+    background-color: var(--lc);
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 12px;
+    padding: 0.75rem;
+}
+ 
+.navigation li a:hover,
+.navigation li.active a {
+    background-color: var(--db);
+}
+/* .pagination-wrap .pagination .page-link {
+  color: var(--lc);
+  border-color: var(--lc);
+}
+.pagination-wrap .pagination .active .page-link{
+  background-color: var(--lc);
+  color: white;
+} */
+.sidebar-wrap .sidebar-heading {
+  font-size: 22px;
+  text-transform: uppercase !important;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: gray;
+  text-align: center;
+  border-bottom: 1px solid var(--db);
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+.sidebar-wrap ul{
+  list-style: none;
+}
+.sidebar-wrap ul li{
+  padding: 8px;
+  display: block;
+  padding-left: 20px;
+}
+
+.footer {
+  padding-top: 60px;
+  background: black;
+  color: white;
+}
+.footer-widget-wrap .fw-header {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.copywright-wrap {
+  padding: 40px 0;
+  border-top: 1px solid var(--db);
+}
+
+.go-top a{
+  position: fixed;
+  bottom: 50px;
+  right:50px;
+  background: var(--db);
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  outline: none;
+  border: 0px;
+  z-index: 999999;
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s ease-in;
+  -webkit-transition: .3s ease-in;
+  -moz-transition: .3s ease-in;
+  -ms-transition: .3s ease-in;
+  -o-transition: .3s ease-in;
+}
+.scroll a{
+  visibility: visible;
+  opacity: 1;
+}
+.wp-calendar-table td {
+  padding:8px;
+  background: var(--db);
+  margin:1px;
+  border: 1px solid white;
+  color: white;
+}
+
+
+@media (min-width: 786px) {
+  .column-post-wrap, .post-slider-wrap{
+    box-shadow: 0px 0px 3px var(--db);
+    padding: 10px;
+  }
+  .post {
+    box-shadow: 0px 0px 3px black;
+    margin-bottom: 30px;
+  }
+  .single-sidebar{
+    box-shadow: 0 0 3px black;
+    padding:15px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .brand-name{
+    padding-top: 20px;
+  }
+}
+
+/* 
+  mega menu styling
+*/
+#mega-menu-wrap-primary-menu{
+  background: red !important;
+}

@@ -1,0 +1,329 @@
+/* 
+  Theme Name: Shimla
+  Author: Mehedi Hassan
+  Author URI: https://mhebd.github.io/m-hassan
+  Description: Heart is a wonderful blogging theme.
+  Version: 1.0.0
+  Text Domain: shimla
+*/
+
+
+
+
+/* Typography
+============================================ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 33px;
+}
+body a{
+  color: var(--theme-color);
+}
+body a:hover {
+  text-decoration: none;
+  color: var(--theme-color);
+}
+body .btn:focus , body .form-control:focus {
+  box-shadow: 0 0 0 black !important;
+}
+
+
+
+
+/* Header part styling
+===================================================== */
+.site-branding .site-name {
+  color: tomato;
+  text-shadow: 6px 6px 4px #c2c2b9;
+  font-weight: 700;
+}
+.site-branding .site-desc {
+  color: rgb(223, 136, 23);
+  text-shadow: 4px 4px 1px #c2c2b9;
+}
+
+
+
+
+/* navbar styling
+===================================================== */
+.nav-wrap {
+  border-top: 1px solid rgb(248, 222, 188);
+  border-bottom: 5px solid var(--theme-bg);
+}
+.navbar {
+  padding: 0 !important;
+}
+
+.navbar-nav li .nav-link {
+  color: black !important;
+  border-bottom: 5px solid transparent;
+  padding-top:  20px;
+  padding-bottom:  20px;
+  margin-bottom: -5px;
+}
+.navbar-nav li .nav-link:hover, .navbar-nav li.active .nav-link {
+  color: var(--theme-color) !important;
+  border-bottom-color: var(--theme-color);
+}
+
+@media (min-width: 786px) {
+  .dropdown-menu {
+    display: block;
+    top: 300%;
+    min-width: 250px;
+    border-top: 5px solid  var(--theme-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+  .navbar-nav li:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+  }
+}
+.dropdown-menu .dropdown-item:hover {
+  color: var(--theme-color);
+}
+
+
+
+
+
+/* search modal styling
+================================================ */
+#search-modal {
+  background: rgba(0, 0, 0, 0.5);
+}
+#search-modal .modal-content {
+  background: transparent;
+  border: 0px;
+}
+#search-modal .input-group {
+  background: transparent;
+  border-bottom: 2px solid white;
+}
+#search-modal .input-group input{
+  color: white;
+  background: transparent;
+  border: 0px;
+  outline: none;
+  font-size: 22px;
+}
+#search-modal .input-group .btn{
+  background: transparent;
+  border: 0px;
+}
+
+
+
+
+
+
+/* Main Post styling 
+==================================================== */
+.card, .card-img-top {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+.post-title a, .post-title{
+  color: black;
+  margin-bottom: 15px;
+}
+.post-meta {
+  padding: 5px 10px;
+  border: 1px solid rgba(139, 139, 139, 0.158);
+  font-size: 14px;
+  color: rgb(63, 63, 63);
+  margin-bottom: 15px;
+}
+.post-meta a{
+  color: black;
+}
+.post-content img {
+  width: 100%;
+  height: auto;
+} 
+.post-content a {
+  color: darkslategrey;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+/* Comments styleing */
+.comments ul{
+  list-style: none;
+}
+.comments .comments-inner{
+  padding:0px;
+}
+.comments li{
+  padding: 15px 0;
+}
+.comments .comment-author img{
+  padding: 2px;
+  background: lavenderblush;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.comments .comment-metadata time{
+  font-size: 12px;
+  font-style: italic;
+  color: gray;
+}
+#comment-submit {
+  border: 1px solid var(--theme-bg) ;
+  background: var(--theme-bg) ;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+#comment-submit:hover{
+  background: var(--theme-color);
+  border-color: var(--theme-color);
+}
+
+
+
+
+
+/* Pagination styling
+================================================ */
+.pagination-wrap a {
+  background: var(--theme-bg);
+  color: white !important;
+  padding: 5px 15px;
+}
+.pagination-wrap a:hover{
+  background: var(--theme-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Widgets styling
+==================================================== */
+.widget ul {
+  padding-inline-start: 0px;
+  list-style: none;
+}
+.lss-heading {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 1px solid rgba(131, 131, 131, 0.418);
+  padding: 10px;
+  margin-bottom: 30px;
+  font-weight: 100;
+}
+.fsw-heading {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 7px;
+}
+.fsw-heading::before {
+  position:  absolute;
+  content: '';
+  width: 70px;
+  height: 3px;
+  background: white;
+  bottom: 0;
+}
+.lss-widget ul li a{
+  color: rgb(88, 88, 88);
+}
+.lss-widget ul li a:hover {
+  color: var(--theme-color);
+}
+.fs-widget ul li a {
+  color: rgb(175, 175, 175);
+}
+.fs-widget ul li a:hover {
+  color: white;
+}
+
+
+
+
+
+
+/* Calendar styling
+================================================ */
+
+#wp-calendar{
+  width: 100%;
+}
+#wp-calendar td , #wp-calendar th{
+  border: 1px solid rgba(126, 124, 124, 0.308);
+  text-align: center;
+}
+.tagcloud {
+  padding: 0 5px;
+}
+.tagcloud a{
+  font-size: 18px !important;
+  background: var(--theme-bg);
+  padding: 3px 6px;
+  color: white;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+/* Footer Styling
+================================================ */
+#footer {
+  background: var(--theme-bg);
+  color: white;
+}
+.fc-wrap {
+  border-top: 1px solid rgba(255, 255, 255, 0.185);
+}

@@ -1,0 +1,283 @@
+/* 
+  Theme Name: Lambda
+  Author: Mehedi Hassan
+  Author URI: http://mhassan.ezyro.com
+  Description: This is a very good looking blogging website.
+  Version: 1.0.0
+  Taxt Domain: lambda
+  Tags: featured post, sidebar, right sidebar, footer widget, user friendly etc.
+*/
+
+
+
+
+/* typography */
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 30px;
+}
+body a{
+  color: var(--theme-color);
+}
+body a:hover{
+  text-decoration: none;
+  color: var(--theme-color);
+}
+body .btn:focus, body input:focus, body .form-control:focus {
+  box-shadow: 0 0 0 black !important;
+}
+
+
+/* ================================================= */
+
+
+/* site style  */
+.site-wrapper {
+  box-shadow: 0 0 10px black;
+}
+header{
+  position: relative;
+}
+.site-heading {
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 35px 0px;
+}
+.site-heading .site-brand .title{
+  font-family: cursive;
+  color: white;
+}
+.site-brand .desc{
+  color: rgb(179, 179, 179);
+}
+
+
+.navbar{
+  background: var(--theme-bg); 
+  box-shadow: 0 0 3px black;
+}
+.navbar-nav li a{
+  color: white !important;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 15px;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a{
+  color: var(--theme-color) !important;
+}
+
+.navbar-nav .dropdown-menu {
+  background: var(--theme-bg);
+}
+.navbar-nav .dropdown-menu a{
+  border-bottom: 1px solid black;
+}
+
+.search-box .input-group{
+  background: white;
+  width: 220px;
+}
+.search-box .input-group input{
+  outline: none;
+  border: 0px;
+}
+.search-box .input-group button{
+  background: transparent;
+  outline: none;
+  border: 0px;
+  color: var(--theme-bg);
+}
+.input-group-append{
+  display: unset;
+}
+
+
+article.index-page {
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.349); */
+}
+.recent-post .post-thumb img{
+  height: 180px;
+  width: 100%;
+}
+.post-title {
+  color: black;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 15px 0;
+}
+.featured-wrap .post-title {
+  margin-top: 0px;
+}
+.featured-wrap .post-title:hover, .blogs .post-title:hover{
+  color: var(--theme-color);
+}
+
+.page .post-title:hover, .single .post-title:hover{
+  color: black !important;
+}
+.post-meta{
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.post-meta a{
+  color: gray;
+}
+.post-content {
+  text-align: justify;
+}
+.post-content img{
+  width: 100% !important;
+}
+.page .post-content a, .single .post-content a{
+  color: gray;
+  border-bottom: 3px dotted var(--theme-color);
+}
+.page .post-content a:hover, .single .post-content a:hover{
+  color: var(--theme-color);
+}
+.read-more-btn{
+  color: white;
+  padding: 7px 30px;
+  margin-top: 30px;
+  background: var(--theme-bg);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.read-more-btn:hover{
+  color: white;
+  background: var(--theme-color);
+}
+.excerpt p{
+  display: inline;
+}
+.excerpt .read-more:hover{
+  text-decoration: underline;
+}
+
+
+.related-posts .post-thumb img{
+  height: 150px;
+  width: 100%;
+}
+
+
+.archive-heading , .search-heading {
+  color: var(--theme-color);
+}
+
+.error {
+  background: url('img/404.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+/* Comments styleing */
+.comments ul{
+  list-style: none;
+}
+.comments .comments-inner{
+  padding:0px;
+}
+.comments li{
+  padding: 15px 0;
+}
+.comments .comment-author img{
+  padding: 2px;
+  background: lavenderblush;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.comments .comment-metadata time{
+  font-size: 12px;
+  font-style: italic;
+  color: gray;
+}
+#comment-submit {
+  border: 1px solid var(--theme-bg) ;
+  background: var(--theme-bg) ;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+#comment-submit:hover{
+  background: var(--theme-color);
+  border-color: var(--theme-color);
+}
+
+
+
+
+.pagination li {
+  margin-left: 5px;
+}
+.pagination li a{
+  display: inline-block;
+  border: 1px solid var(--theme-color);
+  padding: 1px 10px;
+}
+.pagination li.active a, .pagination li a:hover{
+  background: var(--theme-color);
+  color: white;
+}
+
+
+.sb-widget-heading, .f-widget-heading {
+  background: rgba(168, 168, 168, 0.212);
+  color: rgb(0, 0, 0);
+  border-top:3px solid var(--theme-bg);
+  text-align: center;
+  font-size: 25px;
+  font-weight: 100;
+  padding: 5px 0;
+}
+.f-widget-heading {
+  background: transparent;
+  color: white;
+  border: 3px dotted var(--theme-color);
+}
+.sidebar-wrap  ul {
+  list-style-type: square;
+  color: var(--theme-bg);
+  padding-inline-start: 20px;
+}
+.sidebar-wrap  ul li a:hover {
+  color: var(--theme-bg);
+}
+.footer-widget-wrap ul li a{
+  color: white;
+}
+.footer-widget-wrap ul li a:hover{
+  color: var(--theme-color);
+}
+#wp-calendar {
+  width: 100%;
+}
+
+
+.footer {
+  background: var(--theme-bg);
+}
+
+

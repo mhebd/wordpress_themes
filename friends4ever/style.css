@@ -1,0 +1,158 @@
+/* 
+  Theme Name: Friends Forever
+  Author: Md. Mehedi Hassan
+  Author URI: https://mhebd.github.io/m-hassan
+  Description: "Friends Forever" Is a social platform. This is a social media site. You can make friend and connect with them all time. You can message with them & share your oppinion.
+  Tags: sicial-media, social-platform, buddypress, bbpress, left-sidebar, full-width-content, bootstrap.
+  Version: 1.0.0
+  Text Domain: friends4ever
+*/
+
+
+
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  line-height: 33px;
+}
+body a{
+  color: var(--theme-color);
+  text-decoration: none !important;
+}
+body a:hover {
+  color: var(--theme-color);
+}
+body .form-control:focus, body .btn:focus {
+  box-shadow: 0 0 0 black;
+}
+
+.container-xl {
+  box-shadow: 0 0 10px black;
+  padding: 0px;
+}
+
+
+/* navbar nav styling 
+==================================================*/
+.navbar {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background: var(--bg-color);
+}
+.navbar-brand .site-title{
+  color: white !important;
+  text-transform: uppercase;
+}
+.navbar-nav .nav-item .nav-link{
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.navbar-nav .nav-item .nav-link:hover, .navbar-nav li.active .nav-link {
+  color: var(--theme-color) !important;
+}
+
+@media(min-width: 992px){
+  .navbar-nav .nav-item .nav-link{
+    padding: 30px 15px;
+    border-left: 1px solid black;
+  }
+  .navbar-nav .nav-item:first-child .nav-link{
+    border-left: 1px solid transparent;
+  }
+  .navbar-nav .nav-item .nav-link:hover, .navbar-nav li.active .nav-link {
+    background: black;
+    color: var(--theme-color) !important;
+  }
+}
+
+
+
+/* basic styling
+============================================= */
+.site-sidebar-wrap .sw-heading{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.site-sidebar-wrap .sw-heading:before {
+  position: absolute;
+  content: '';
+  width: 35px;
+  height: 2px;
+  background: var(--bg-color);
+  bottom: 0;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer styling
+============================================== */
+#site-footer{
+  background: var(--bg-color);
+  color: white;
+  border-top: 3px solid black;
+}
+#site-footer .nav li a {
+  color: white; 
+}
+#site-footer .nav li a:hover{
+  color: var(--theme-color);
+}
+.copyright-wrap a{
+  color: white !important;
+  text-decoration: underline !important;
+}
+.copyright-wrap a:hover{
+  text-decoration: none !important;
+}
+.copyright-wrap {
+  border-top: 1px solid rgba(0, 0, 0, 0.418);
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

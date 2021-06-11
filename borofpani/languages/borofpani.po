@@ -1,0 +1,143 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2020-08-11 13:59+0600\n"
+"PO-Revision-Date: 2020-08-11 15:01+0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: bn_BD\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Poedit-KeywordsList: _e;__;_x;_nx;esc_attr_x\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: archive.php:22 index.php:19 search.php:22
+msgid "New In Blog"
+msgstr "নতুন ব্লগ"
+
+#: archive.php:43 archive.php:75 author.php:55 category.php:53 tag.php:53
+msgid "Post Show From "
+msgstr "পোস্ট দেখান হচ্ছে "
+
+#: archive.php:116 author.php:95 category.php:95 page.php:65 search.php:84
+#: tag.php:94
+msgid "There is no post found!!"
+msgstr "‌কোন কিছু খুজে পাওয়া যাই নি!!"
+
+#: author.php:24 category.php:24 tag.php:24
+msgid "New In "
+msgstr "নতুন "
+
+#: comments.php:44
+msgid "Be first in comment"
+msgstr ""
+
+#: comments.php:47
+msgid "One Comment"
+msgstr ""
+
+#: comments.php:52
+#, php-format
+msgid "%1$s Comments"
+msgstr ""
+
+#: comments.php:95
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:96
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:156
+msgid "Comment"
+msgstr ""
+
+#: comments.php:158
+msgid "Leave A Comment"
+msgstr ""
+
+#: comments.php:160
+msgid "Reply"
+msgstr ""
+
+#: comments.php:162
+msgid "Cancel Reply"
+msgstr ""
+
+#: comments.php:170
+msgid "comment-submit"
+msgstr ""
+
+#: comments.php:184
+msgid "Comments are closed."
+msgstr ""
+
+#: inc/customizer.php:7
+msgid "Theme Basic Customizer"
+msgstr ""
+
+#: inc/customizer.php:20
+msgid "Theme Main Color"
+msgstr ""
+
+#: inc/customizer.php:33
+msgid "Theme Background Color"
+msgstr ""
+
+#: inc/customizer.php:46
+msgid "Theme Banner"
+msgstr ""
+
+#: inc/customizer.php:60
+msgid "Theme Footer Copyright Text"
+msgstr ""
+
+#: inc/theme-setup.php:27
+msgid "Left sidebar widget"
+msgstr ""
+
+#: inc/theme-setup.php:38
+msgid "Footer  widget"
+msgstr ""
+
+#: inc/theme-setup.php:56
+msgid "Main Menu"
+msgstr ""
+
+#: inc/theme-setup.php:57
+msgid "Widget Menu"
+msgstr ""
+
+#: inc/theme-setup.php:58
+msgid "Footer Menu"
+msgstr ""
+
+#: index.php:40 index.php:80 index.php:141 page.php:34 single.php:34
+#: single.php:65
+msgid "There Is No Post Found!!"
+msgstr ""
+
+#: search.php:43 search.php:59
+msgid "Post Show From"
+msgstr ""
+
+#: searchform.php:13
+msgid "Search&hellip;"
+msgstr ""
+
+#: single.php:72
+msgid "Tags:"
+msgstr ""
+
+#: single.php:82
+msgid "You Might Like This"
+msgstr ""
+
+#: single.php:119
+msgid "About"
+msgstr ""
